@@ -3,9 +3,9 @@ Welcome to my portfolio! These are some projects I have worked on in the past. P
 ## AndroidStudioProjects
 Android applications created using Android Studio
 ### AlarmClock
-An Alarm Clock application that uses a minigame to snooze the alarm.
+An Alarm Clock application that uses a minigame to snooze the alarm
 ### RestaurantRoller
-An application where users can search the YELP database and add restaurants to a list. Afterwards, the application will randomly select a restaurant from the list.
+An application where users can search the YELP database and add restaurants to a list. Afterwards, the application will randomly select a restaurant from the list
 ## GameDevelopmentProjects
 Games created using Visual Studio C++ and openFrameworks
 ### Imfractical
