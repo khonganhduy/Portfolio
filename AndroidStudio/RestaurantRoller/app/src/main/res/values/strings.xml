@@ -1,0 +1,43 @@
+<resources>
+    <string name="yelp_token">tsvi1lR7IZ_X6ilZXVbtPQ</string>
+    <string name="yelp_key">Ni4mFTF0sjaHGiiHtdkR7QkEgLOgO7sqoCBjzVmIEs-C0gLXpUcip73U7f5Mm8MspHlU6frco8WAbEJa7PalRDKt2Csi-3GHvi6S8gNrAxR-MMQwe5NMFKzSdQiLXnYx</string>
+    <string name="app_name">Restaurant Roller</string>
+    <string name="search_title">Search Settings</string>
+    <string name="search_radius">Maximum Distance</string>
+    <string name="search_rating">Minimum Rating</string>
+    <string name="search_price">Price range</string>
+    <string name="search_term_title">Search For:</string>
+    <string name="search_term_hint">Enter a term</string>
+    <string name="search_tag_hint">Letters only</string>
+    <string name="help">Help</string>
+    <string name="help_title">Select an Item For More Information:</string>
+    <string name="help_roll">Roll</string>
+    <string name="help_favorite">Favorite</string>
+    <string name="help_search_results">Search Results</string>
+    <string name="help_search">Search</string>
+    <string name="body_roll">This tab shows restaurants you added to a list where the application will randomly select one restaurant from the entire list.\n\nTo randomly select a restaurant click on the "ROLL RESTAURANTS" button in the top right hand corner.\n\nThe number on the right column indicates the likelihood that a restaurant will be chosen.\nThe higher the number the more likely the restaurant will be chosen.\n\nYou can increase or decrease this number by pressing on the UP and UP arrows above and below the number.\n\nTo remove a restaurant SWIPE RIGHT on the restaurant.</string>
+    <string name="body_favorite">This tab shows restaurants that you add yourself instead of from Yelp.\n\nTo add your own restaurant, click the "ADD RESTAURANT" button in the top right.\n\nFrom here you can give a restaurant name and custom tags. When you press "CONFIRM", the restaurant is added to your favorites list.\n\nTo add a restaurant to the roller, click the "ADD TO ROLL" button in the right column.\n\nTo delete a restaurant, SWIPE RIGHT on the restaurant.</string>
+    <string name="body_search_results">This tab shows the search results of the SEARCH tab.\n\nHere you can filter search results with a tag to narrow down the list of restaurants.\n\nTo add a restaurant to the roller, click the "ADD TO ROLL" button in the right column.</string>
+    <string name="body_search">This tab allows you to search Yelp for restaurants.\n\nYou can type in a name to search under the SEARCH FOR field.\n\nYou can set a maximum distance up to 25 miles.\n\nYou can set a minimum Yelp review rating.\n\nYou can set a Yelp price range.\n\nAfter you are finished preparing your search, click the SEARCH button on the bottom. The button should automatically take you to the SEARCH RESULTS tab. </string>
+    <string name="add_restaurant_fragment_title">Add Restaurant</string>
+    <string name="roll_restaurant_fragment_title">Roller Selected</string>
+    <string name="search_button_text">Search</string>
+    <string-array name="ratings_list">
+        <item>None</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="prices_list">
+        <item>$</item>
+        <item>$$</item>
+        <item>$$$</item>
+        <item>$$$$</item>
+    </string-array>
+</resources>

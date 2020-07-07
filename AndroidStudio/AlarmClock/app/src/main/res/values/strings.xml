@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AlarmClock++</string>
+    <string name="alarm_hint">Description</string>
+    <string name="sunday">Su</string>
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">Th</string>
+    <string name="friday">F</string>
+    <string name="saturday">Sa</string>
+    <string name="alarm_sound">Alarm Sound</string>
+    <string name="vibration">Vibration</string>
+    <string name="ringtone">Default</string>
+    <string name="minigame">Minigame</string>
+    <string name="snooze">Snooze</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="date_display">Date</string>
+    <string name="date_message">Click to set a specific date for alarm to trigger</string>
+    <string name="music_default_text">Click here to select your music</string>
+</resources>

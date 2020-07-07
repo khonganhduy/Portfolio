@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:timePickerMode="spinner"
+            android:numbersTextColor="?attr/textColor"
+            android:amPmTextColor="?attr/textColor"
+            android:numbersSelectorColor="?attr/textColor"
+            android:amPmBackgroundColor="?attr/textColor"
+            android:numbersBackgroundColor="?attr/textColor"
+            android:numbersInnerTextColor="?attr/textColor"
+            android:theme="@style/CardView.Dark"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/bgColor"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal">
+
+                            <ToggleButton
+                                android:id="@+id/sundayButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:minWidth="45dp"
+                                android:minHeight="45dp"
+                                android:textAllCaps="false"
+                                android:checked="false"
+                                android:textOff="@string/sunday"
+                                android:textOn="@string/sunday" />
+
+                            <ToggleButton
+                                android:id="@+id/mondayButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:minWidth="45dp"
+                                android:minHeight="45dp"
+                                android:checked="false"
+                                android:textOff="@string/monday"
+                                android:textOn="@string/monday" />
+
+                            <ToggleButton
+                                android:id="@+id/tuesdayButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:minWidth="45dp"
+                                android:minHeight="45dp"
+                                android:checked="false"
+                                android:textOff="@string/tuesday"
+                                android:textOn="@string/tuesday" />
+
+                            <ToggleButton
+                                android:id="@+id/wednesdayButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:minWidth="45dp"
+                                android:minHeight="45dp"
+                                android:checked="false"
+                                android:textOff="@string/wednesday"
+                                android:textOn="@string/wednesday" />
+
+                            <ToggleButton
+                                android:id="@+id/thursdayButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:minWidth="45dp"
+                                android:minHeight="45dp"
+                                android:textAllCaps="false"
+                                android:checked="false"
+                                android:textOff="@string/thursday"
+                                android:textOn="@string/thursday" />
+
+                            <ToggleButton
+                                android:id="@+id/fridayButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:minWidth="45dp"
+                                android:minHeight="45dp"
+                                android:checked="false"
+                                android:textOff="@string/friday"
+                                android:textOn="@string/friday" />
+
+                            <ToggleButton
+                                android:id="@+id/saturdayButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="4dp"
+                                android:minWidth="45dp"
+                                android:minHeight="45dp"
+                                android:textAllCaps="false"
+                                android:checked="false"
+                                android:textOff="@string/saturday"
+                                android:textOn="@string/saturday" />
+                        </TableRow>
+
+                        <EditText
+                            android:id="@+id/descriptionEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="20dp"
+                            android:ems="10"
+                            android:hint="@string/alarm_hint"
+                            android:inputType="text"
+                            android:backgroundTint="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textColor="@android:color/white" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/vibrationTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignWithParentIfMissing="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentTop="true"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/vibration"
+                                        android:textColor="?attr/textColor"
+                                        android:textSize="16sp" />
+
+
+
+                                    <Switch
+                                        android:id="@+id/vibrationToggle"
+                                        android:layout_width="56dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                </RelativeLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/minigameTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignWithParentIfMissing="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentTop="true"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/minigame"
+                                        android:textColor="?attr/textColor"
+                                        android:textSize="16sp" />
+
+
+                                    <Switch
+                                        android:id="@+id/minigameToggle"
+                                        android:layout_width="56dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true" />
+
+                                </RelativeLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/snooze_selector"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/snoozeTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignWithParentIfMissing="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentTop="true"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/snooze"
+                                        android:textColor="?attr/textColor"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/snoozeTimeTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/snoozeTextView"
+                                        android:text="TextView"
+                                        android:textColor="?attr/textColor" />
+
+                                </RelativeLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/sound_selector"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/musicSelectorTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignWithParentIfMissing="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentTop="true"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/alarm_sound"
+                                        android:textColor="?attr/textColor"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/second_line1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/musicSelectorTextView"
+                                        android:text="@string/music_default_text"
+                                        android:textColor="?attr/textColor" />
+
+
+                                </RelativeLayout>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:id="@+id/date_selector"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="10dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/dateSelectorTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignWithParentIfMissing="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentTop="true"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/date_display"
+                                        android:textColor="?attr/textColor"
+                                        android:textSize="16sp" />
+
+                                    <TextView
+                                        android:id="@+id/dateDisplayTextView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/dateSelectorTextView"
+                                        android:text="@string/date_message"
+                                        android:textColor="?attr/textColor" />
+
+
+                                </RelativeLayout>
+
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        >
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:textAllCaps="false"
+            android:text="@string/cancel"
+            />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:textAllCaps="false"
+            android:text="@string/save" />
+    </LinearLayout>
+
+</LinearLayout>

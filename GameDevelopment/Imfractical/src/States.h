@@ -1,0 +1,17 @@
+#pragma once
+// Anhduy Khong CS134
+// 3/31/19
+// Animation state for the player
+enum PlayerAnimState {
+	LEFT, RIGHT, IDLE
+};
+
+// Game state
+enum GameState {
+	TITLE, TUTORIAL1, TUTORIAL2,TUTORIAL3, MENU, GAMEOVER, LEVEL1, LEVEL1CLEAR, LEVEL2, LEVEL2CLEAR, LEVEL3, LEVEL3CLEAR
+};
+
+// Phases of boss
+enum BossState {
+	PHASE1, PHASE2, PHASE3, PHASE4,PHASE5,PHASE6,PHASE7,PHASE8,PHASE9,PHASE10,PHASE11, PHASE12
+};

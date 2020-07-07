@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1">
+
+                <include layout="@layout/activity_roller"
+                    android:id="@+id/roller_tab"/>
+                <include layout="@layout/activity_favorite_lists"
+                    android:id="@+id/favorites_lists_tab"/>
+                <include layout="@layout/activity_search_result_list"
+                    android:id="@+id/search_result_lists_tab"/>
+                <include layout="@layout/activity_search"
+                    android:id="@+id/search_tab"/>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-4dp"
+                android:layout_weight="0" />
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
